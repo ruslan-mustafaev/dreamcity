@@ -1,0 +1,219 @@
+/* ===== БРЕНДОВЫЕ ЦВЕТА ===== */
+:root {
+  --brand-primary: #4299e1;
+  --brand-secondary: #667eea;
+  --brand-accent: #764ba2;
+  --brand-dark: #2d3748;
+  --brand-light: #f7fafc;
+}
+
+/* ===== ОСНОВНЫЕ BACKDROP КЛАССЫ ===== */
+
+/* Главный брендовый backdrop */
+.brand-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(66, 153, 225, 0.92) 0%,
+    rgba(102, 126, 234, 0.88) 50%,
+    rgba(118, 75, 162, 0.90) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  color: white;
+  box-shadow: 
+    0 8px 32px rgba(66, 153, 225, 0.3),
+    0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Темная тема для brand-backdrop */
+.dark .brand-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 55, 72, 0.95) 0%,
+    rgba(26, 32, 44, 0.92) 50%,
+    rgba(17, 24, 39, 0.95) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Светлый backdrop для читаемости */
+.light-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(247, 250, 252, 0.92) 50%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 25px;
+  color: var(--brand-dark);
+  box-shadow: 
+    0 6px 24px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Темная тема для light-backdrop */
+.dark .light-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(55, 65, 81, 0.9) 0%,
+    rgba(75, 85, 99, 0.85) 50%,
+    rgba(55, 65, 81, 0.9) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: 
+    0 6px 24px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Полупрозрачный темный backdrop */
+.dark-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 55, 72, 0.92) 0%,
+    rgba(26, 32, 44, 0.88) 100%
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  color: white;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== СПЕЦИАЛЬНЫЕ ВАРИАНТЫ ===== */
+
+/* Для hero секции */
+.hero-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(66, 153, 225, 0.95) 0%,
+    rgba(102, 126, 234, 0.92) 35%,
+    rgba(118, 75, 162, 0.95) 100%
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  box-shadow: 
+    0 12px 40px rgba(66, 153, 225, 0.4),
+    0 6px 20px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Темная тема для hero-backdrop */
+.dark .hero-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 55, 72, 0.95) 0%,
+    rgba(26, 32, 44, 0.92) 35%,
+    rgba(17, 24, 39, 0.95) 100%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    0 6px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Для карточек услуг */
+.service-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(247, 250, 252, 0.85) 100%
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  padding: 24px;
+  color: var(--brand-dark);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.service-backdrop:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 24px rgba(66, 153, 225, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: rgba(66, 153, 225, 0.3);
+}
+
+/* Темная тема для service-backdrop */
+.dark .service-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(55, 65, 81, 0.9) 0%,
+    rgba(75, 85, 99, 0.85) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dark .service-backdrop:hover {
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+/* Для преимуществ */
+.advantage-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(66, 153, 225, 0.1) 0%,
+    rgba(102, 126, 234, 0.08) 50%,
+    rgba(118, 75, 162, 0.1) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(66, 153, 225, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--brand-dark);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Темная тема для advantage-backdrop */
+.dark .advantage-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(55, 65, 81, 0.8) 0%,
+    rgba(75, 85, 99, 0.7) 50%,
+    rgba(55, 65, 81, 0.8) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  background-color: rgba(31, 41, 55, 0.7);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-backdrop,
+  .brand-backdrop {
+    padding: 25px;
+  }
+  
+  .service-backdrop {
+    padding: 20px;
+  }
+}
