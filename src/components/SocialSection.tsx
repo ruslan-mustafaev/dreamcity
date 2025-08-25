@@ -46,33 +46,39 @@ export const SocialSection: React.FC<SocialSectionProps> = ({ language }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 space-y-4"
+          className="text-center mb-16"
         >
           {/* Заголовок с подложкой */}
-          <div className="advantage-backdrop inline-block" style={{ padding: '25px 35px' }}>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold" 
-                style={{
-                  background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)',
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  textShadow: 'none',
-                  lineHeight: '1.2',
-                  margin: '0'
-                }}>
-              {t.social.title}
-            </h2>
+          <div className="w-full flex justify-center mb-4">
+            <div className="advantage-backdrop" style={{ padding: '25px 35px' }}>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold" 
+                  style={{
+                    background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)',
+                    WebkitBackgroundClip: 'text',
+                    backgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    textShadow: 'none',
+                    lineHeight: '1.2',
+                    margin: '0',
+                    whiteSpace: 'nowrap'
+                  }}>
+                {t.social.title}
+              </h2>
+            </div>
           </div>
           
           {/* Подзаголовок с отдельной подложкой */}
-          <div className="advantage-backdrop inline-block" style={{ padding: '15px 25px' }}>
-            <p className="text-base sm:text-lg md:text-xl font-medium text-gray-900 dark:text-white" 
-               style={{
-                 lineHeight: '1.2',
-                 margin: '0'
-               }}>
-              {t.social.subtitle}
-            </p>
+          <div className="w-full flex justify-center">
+            <div className="advantage-backdrop" style={{ padding: '15px 25px' }}>
+              <p className="text-base sm:text-lg md:text-xl font-medium text-gray-900 dark:text-white" 
+                 style={{
+                   lineHeight: '1.2',
+                   margin: '0',
+                   whiteSpace: 'nowrap'
+                 }}>
+                {t.social.subtitle}
+              </p>
+            </div>
           </div>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
