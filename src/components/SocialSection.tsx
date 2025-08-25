@@ -46,10 +46,10 @@ export const SocialSection: React.FC<SocialSectionProps> = ({ language }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 space-y-4"
         >
-          {/* ИЗМЕНЕНИЕ: Заголовок с такой же подложкой */}
-          <div className="advantage-backdrop inline-block mb-6" style={{ padding: '20px 30px' }}>
+          {/* Заголовок с подложкой */}
+          <div className="advantage-backdrop inline-block" style={{ padding: '25px 35px' }}>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold" 
                 style={{
                   background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)',
@@ -64,7 +64,7 @@ export const SocialSection: React.FC<SocialSectionProps> = ({ language }) => {
             </h2>
           </div>
           
-          {/* ИЗМЕНЕНИЕ: Подзаголовок с обычным цветом текста */}
+          {/* Подзаголовок с отдельной подложкой */}
           <div className="advantage-backdrop inline-block" style={{ padding: '15px 25px' }}>
             <p className="text-base sm:text-lg md:text-xl font-medium text-gray-900 dark:text-white" 
                style={{
