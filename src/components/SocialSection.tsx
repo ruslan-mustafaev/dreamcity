@@ -48,7 +48,7 @@ export const SocialSection: React.FC<SocialSectionProps> = ({ language }) => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          {/* Заголовок с подложкой */}
+          {/* Заголовок с подложкой 1 */}
           <div className="advantage-backdrop inline-block px-9 py-6 mb-6">
             <h2
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug"
