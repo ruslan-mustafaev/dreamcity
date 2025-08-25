@@ -16,7 +16,7 @@ export const SocialSection: React.FC<SocialSectionProps> = ({ language }) => {
 
   const socialLinks = [
     {
-      name: 'Telegram',
+      name: 'Telegram1',
       url: SOCIAL_LINKS.telegram,
       icon: Send,
       color: 'bg-blue-500 hover:bg-blue-600',
